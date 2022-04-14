@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ .Content }}
+
+{{range.Site.RegularPages}}
+<li><a href="{{.Permalink}}">{{.Title}}</a></li>
+{{end}}
+
+{{ partial "tagcloud.html" . }}
+
+{{ end }}

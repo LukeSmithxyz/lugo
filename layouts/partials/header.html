@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+    <head>
+	    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+        <meta charset="utf-8"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel='stylesheet' type='text/css' href='/style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="{{ .Params.tags }}">
+        <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/rss.xml'>
+    </head>
+<body>
+    {{ partial "nav.html" . }}
+    <main>

@@ -1,0 +1,52 @@
+body {
+	font-style: sans-serif ;
+	background: #100 ;
+	color: #ddd ;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+header h1 {
+	text-align: center ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: center ;
+}
+
+nav,footer {
+	text-align: center ;
+	clear: both ;
+	border-radius: 20px ;
+	margin: auto ;
+}
+nav li,footer li {
+	display: inline-block ;
+	list-style: none ;
+	border-radius: 10px ;
+	padding: .5em ;
+	max-width: 7em ;
+}
+nav ul, footer ul, #taglist {
+	padding: 0;
+	margin: .5em;
+}
+
+
+@media (min-width: 1200px) {
+	nav {
+		float: left ;
+		width: 175px ;
+		position: fixed ;
+		text-align: left ;
+		font-size: large ;
+	}
+	nav li {
+		display: block ;
+		text-align: center ;
+		margin: .5em auto ;
+	}
+}

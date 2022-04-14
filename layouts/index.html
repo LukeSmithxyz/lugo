@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+
+<header><h1>{{ .Site.Title }}</h1></header>
+
+{{ .Content }}
+
+{{ partial "tagcloud.html" . }}
+
+{{ partial "footer.html" . }}

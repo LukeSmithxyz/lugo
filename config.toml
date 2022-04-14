@@ -1,0 +1,11 @@
+baseURL = 'https://example.org'
+languageCode = 'en-us'
+title = "Website Name"
+
+# [menu]
+# [[menu.main]]
+#   identifier = 'home'
+#   name = 'Home'
+#   pre = "🏡"
+#   url = '/index.html'
+#   weight = -110
