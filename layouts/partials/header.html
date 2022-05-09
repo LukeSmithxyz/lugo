@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language }}">
     <head>
-	    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+	    <title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
         <meta charset="utf-8"/>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel='stylesheet' type='text/css' href='/style.css'>

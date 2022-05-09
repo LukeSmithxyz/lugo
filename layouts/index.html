@@ -1,9 +1,7 @@
 {{ partial "header.html" . }}
 
-<header><h1>{{ .Site.Title }}</h1></header>
+<header><h1>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</h1></header>
 
 {{ .Content }}
-
-{{ partial "tagcloud.html" . }}
 
 {{ partial "footer.html" . }}

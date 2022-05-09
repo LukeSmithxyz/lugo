@@ -4,6 +4,14 @@ body {
 	color: #ddd ;
 }
 
+.lw, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img {
+	max-height: 1em;
+	max-width: 1em;
+	vertical-align: middle ;
+}
+
+img { max-width: 100% ; }
+
 main {
 	max-width: 800px ;
 	margin: auto ;

@@ -1,7 +1,7 @@
 <nav>
-    <ul>
-        {{ range.Site.Menus.main }}
-        <a href="{{ .URL }}"><li>{{ .Pre }}{{ .Name }}</li></a>
+    <ul>{{ $sec := .Page.Section }}{{ $file := .File.TranslationBaseName }}
+        {{ range.Site.Menus.main }}{{ $base := path.Base .URL }}
+        <a {{ if or ( eq $sec $base ) ( eq $file $base ) ( and (eq $sec "") ( eq $file "_index") (eq $base "/") ) }}class="menuactive" {{ end }}href="{{ .URL }}"><li><span class=pre>{{ .Pre }}</span><span class=menuname>{{ .Name }}</span></li></a>
         {{ end }}
     </ul>
 </nav>
