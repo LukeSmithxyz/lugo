@@ -2,8 +2,11 @@
 
 <header><h1>{{ .Title }}</h1></header>
 
+<article>
+
 {{ .Content }}
 
+<ul>
 {{ range.Pages }}
 
 <li>
@@ -12,5 +15,8 @@
 </li>
 
 {{ end }}
+</ul>
+
+</article>
 
 {{ partial "footer.html" . }}
