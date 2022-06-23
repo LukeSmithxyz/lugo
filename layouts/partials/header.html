@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel='stylesheet' type='text/css' href='/style.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="{{ .Params.tags }}">
+        <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
         <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/rss.xml'>
     </head>
 <body>
