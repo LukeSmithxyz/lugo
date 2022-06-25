@@ -23,8 +23,8 @@ jobs:
       with:
         host: lukesmith.xyz
         username: lugo
-        key: ${{ secrets.based_ssh }}
-        passphrase: ${{ secrets.based_ssh_pass }}
+        key: ${{ secrets.lugo_ssh }}
+        passphrase: ${{ secrets.lugo_pass }}
         port: 22
         script: |
           cd /var/www/lugo
