@@ -1,7 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ partial "header.html" . -}}
 <header><h1>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</h1></header>
-
 {{ .Content }}
-
 {{ partial "footer.html" . }}

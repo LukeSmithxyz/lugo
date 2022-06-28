@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language }}">
-    <head>
+<head>
 	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
-        <meta charset="utf-8"/>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel='stylesheet' type='text/css' href='/style.css'>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
-        <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/rss.xml'>
 	<link rel="canonical" href="{{ .Site.BaseURL }}">
+	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+	{{ with .Site.Params.stylesheet }}<link rel='stylesheet' type='text/css' href='{{ . }}'>
+	{{ end -}}
+	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
+	{{ end -}}
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-    </head>
+	<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
 <body>
-    {{ partial "nav.html" . }}
-    <main>
+{{- partial "nav.html" . -}}
+<main>
