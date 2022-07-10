@@ -43,6 +43,10 @@ nav ul, footer ul, #taglist {
 	margin: .5em;
 }
 
+.taglist a:not(:last-child)::after {
+	content: " · ";
+}
+
 
 @media (min-width: 1200px) {
 	nav {
