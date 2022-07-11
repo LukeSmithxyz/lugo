@@ -6,7 +6,7 @@
                 {{- range $k, $v := .Params.tags -}}
                 {{- $url := printf "tags/%s" (. | urlize | lower) -}}
                 <a id="tag_{{ . | lower }}" href="{{ $url | absURL }}">{{ . | title }}</a>
-                {{- if lt $k (sub $tagsLen 1) }}&middot;{{ end -}}
+                {{- if lt $k (sub $tagsLen 1) }} &middot; {{ end -}}
                 {{- end -}}
             </div>
             {{- end -}}
@@ -14,7 +14,7 @@
 </main>
 <footer>
 	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a><br>
-	{{ if .Site.Params.showrss }}<a href="/index.xml"><img src="/pix/rss.svg" style="max-height:.9em;display:inline" alt=""> Subscribe via RSS for Updates.</a>{{ end }}
+	{{ if .Site.Params.showrss }}<a href="/index.xml"><img src="/rss.svg" style="max-height:.9em;display:inline" alt=""> Subscribe via RSS for Updates.</a>{{ end }}
 </footer>
 </body>
 </html>
