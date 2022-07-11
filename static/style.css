@@ -1,7 +1,7 @@
 body {
 	font-style: sans-serif ;
-	background: #100 ;
-	color: #ddd ;
+	background: #110000 ;
+	color: #ccc ;
 }
 
 main {
@@ -9,7 +9,8 @@ main {
 	margin: auto ;
 }
 
-.lw, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img {
+/* If images are placed in text areas, assume they are font-sized icons. */
+p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img {
 	max-height: 1em ;
 	max-width: 1em ;
 	vertical-align: middle ;
@@ -20,5 +21,13 @@ img {
 }
 
 header h1 {
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+}
+
+.taglist {
 	text-align: center ;
 }
