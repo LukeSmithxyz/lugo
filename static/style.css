@@ -22,12 +22,16 @@ footer {
 	clear: both ;
 }
 
+/* For TAGLIST.HTML */
 .taglist {
 	text-align: center ;
 	clear: both ;
 }
 
 /* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+}
 #prevart {
 	float: left ;
 	text-align: left ;
