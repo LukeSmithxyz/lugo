@@ -17,4 +17,3 @@ cp themes/lugo/static/style.css static/
 - Makes one RSS feed for the entire site at `/index.xml`
 - Stylesheet is in `/style.css`.
 - If a post is tagged, links to the tags are placed at the bottom of the post.
-- By default, the home index has its own custom file because I don't like it being a list. Remove `/layouts/index.html` if you want your home to function like a list as is default in Hugo.
