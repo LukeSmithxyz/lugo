@@ -5,5 +5,4 @@ languageCode = 'en-us'
 [params]
   #relatedtext = "Related:"
   favicon = "/favicon.ico"
-  stylesheet = "/style.css"
   showrss = true
