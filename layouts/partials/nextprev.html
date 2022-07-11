@@ -1,9 +1,10 @@
-	{{ if or .Next .Prev }}
-	{{- with .Prev }}
-	<a href="{{ .RelPermalink}}"><div id="prevart">Previous:<br>{{.Title}}</div></a>
-	{{ end }}
-	{{- with .Next }}
-	<a href="{{ .RelPermalink}}"><div id="nextart">Next:<br>{{.Title}}</div></a>
-	{{ end }}
-	<br style="clear:both">
-	{{ end }}
+{{ if or .Next .Prev -}}
+<br style="clear:both">
+{{- with .Prev }}
+<a href="{{ .RelPermalink}}"><div id="prevart">Previous:<br>{{.Title}}</div></a>
+{{ end -}}
+{{- with .Next -}}
+<a href="{{ .RelPermalink}}"><div id="nextart">Next:<br>{{.Title}}</div></a>
+{{ end -}}
+<br style="clear:both">
+{{ end -}}
