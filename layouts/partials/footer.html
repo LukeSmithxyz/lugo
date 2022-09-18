@@ -4,14 +4,14 @@
 </main>
 <footer>
     <a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a><br><br>
-    <a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+    <a href="/index.xml"><img src="/svg/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
 
     {{ if ne .Params.Linkedin "" }}
-    <a href="{{ .Site.Params.Linkedin }}"><img src="/linkedin.svg" style="max-height:1.5em" alt="Linkedin" title="Linkedin"></a>
+    <a href="{{ .Site.Params.Linkedin }}"><img src="/svg/linkedin.svg" style="max-height:1.5em" alt="Linkedin" title="Linkedin"></a>
     {{end}}
 
     {{ if ne .Params.Github "" }}
-    <a href="{{ .Site.Params.Github }}"><img src="/github.svg" style="max-height:2em" alt="GitHub" title="GitHub"></a>
+    <a href="{{ .Site.Params.Github }}"><img src="/svg/github.svg" style="max-height:2em" alt="GitHub" title="GitHub"></a>
     {{end}}
 </footer>
 </body>
