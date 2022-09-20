@@ -1,11 +1,17 @@
-{{ partial "header.html" . -}}
-<header><h1 id="tag_{{ .Title }}">{{ .Title | title }}</h1></header>
-<article>
-{{ .Content -}}
+{{ define "title" -}}
+{{ .Title | title }}
+{{- end }}
+{{ define "main" -}}
+{{ .Content }}
 <ul>
 {{- range.Pages }}
-	<li><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006 Jan 02" }}</time> &ndash; <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-{{ end -}}
+	<li>
+		{{- if .Param "datesinlist" }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006 Jan 02" }}</time> &ndash; {{ end -}}
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		{{- if .Param "authorsinlist" }}
+		{{- range .Param "authors" }} by {{ . }}{{ end -}}
+		{{ end -}}
+		</li>
+{{- end }}
 </ul>
-</article>
-{{- partial "footer.html" . }}
+{{- end }}
