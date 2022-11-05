@@ -3,24 +3,24 @@
 {{ partial "head.html" . }}
 
 <body>
-    {{ block "header" . }}
-    {{ partial "header.html" . }}
-    {{ end }}
-    <main>
-        <div class="article-header">
-            <h3 class="spaced">
-                {{ .Page.Title }}
-            </h3>
-        </div>
-        <article>
-            {{ block "main" . }}
-            {{ .Content }}
-            {{ end }}
-        </article>
-        {{ block "footer" . }}
-        {{ partial "footer.html" . }}
-        {{ end }}
-    </main>
+{{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
+<main>
+<header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+<article>
+{{ block "main" . }}
+{{ .Content }}
+{{ end }}
+<br><hr><br>
+{{ if .Param "nextprev" }}{{ partial "nextprev.html" . -}}{{ end -}}
+{{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
+</article>
+</main>
+{{ block "footer" . }}
+<footer>
+	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
+	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
+</footer>
+{{ end }}
 </body>
 
 </html>
