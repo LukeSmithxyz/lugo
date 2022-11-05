@@ -7,94 +7,97 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: medium;
 	background: rgb(71, 71, 71);
 	color: black;
 }
-
 main {
-	max-width: 60%;
+	max-width: 75%;
 	margin: auto;
 }
-
 header h1 {
 	text-align: center;
 	color: white;
 }
-
 a:link {
-	color: rgb(126, 249, 255);
-}
-a:visited {
 	color: white;
 }
-
+a:visited{
+	color: rgb(174, 174, 174);
+}
+article a:link {
+	color: rgb(0, 0, 0);
+}
+article a:visited {
+	color: rgb(64, 64, 64);
+}
 article {
 	background-color: burlywood;
 	outline: cadetblue solid 5px;
 	padding: 3%;
 	border-radius: 10px;
 }
-
+hr {
+	border-top: 2px solid cadetblue;
+	border-radius: 4px;
+}
 pre {
 	/*
 	This has to be flagged important because somewhere in hugo a style
 	is being directly applied to pre blocks. Ill have to find it later.
 	 */
 	background-color: rgb(59, 59, 59) !important;
-	padding: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-radius: 8px;
 	outline: cadetblue solid 3px;
 }
 code {
 	font-size: large;
+	color: white;
+	/*
+	we need to re-define these
+	for times when a single backtick is used
+	*/
+	background-color: rgb(59, 59, 59);
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 1px;
+	border-radius: 4px;
 }
-
-
-
 img {
 	max-width: 100%;
 }
-
-
 footer {
-	padding-top: 1%;
+	padding-top: 2%;
 	text-align: center;
 	clear: both;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    text-align: center;
+footer a:any-link {
+	color: white;
 }
 
-article h1 {
-    margin-bottom: 1rem;
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+	color: black;
 }
 
-a {
-    color: #3e765d;
+#nextprev a:any-link {
+	color: black;
 }
 
-a:hover {
-    color: #344a70;
-    text-decoration-line: none;
+#nextart {
+	float: left ;
+	text-align: left ;
 }
-
-header a {
-    color: inherit;
-    text-decoration-line: none;
-    font-weight: bold;
-}
-
-header a:hover {
-    font-weight: bold;
-    color: inherit
-}
-
-main {
-    max-width: 80%;
-    margin: auto;
+#prevart {
+	float: right ;
+	text-align: right ;
 }
 
 @media screen and (max-width: 900px) {
@@ -102,4 +105,10 @@ main {
     max-width: 100%;
     margin: auto;
 }
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center;
+	clear: both;
+	color: rgb(64, 64, 64);
 }
