@@ -10,7 +10,7 @@
 {{ block "main" . }}
 {{ .Content }}
 {{ end }}
-<br><hr><br>
+{{ if not .IsHome }} <br><hr><br> {{end -}}
 {{ if .Param "nextprev" }}{{ partial "nextprev.html" . -}}{{ end -}}
 {{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
 </article>
