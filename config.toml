@@ -14,3 +14,4 @@ languageCode = 'en-us'
   #footer items
   nextprev = true
   taglist = true
+  showrss = true
