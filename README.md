@@ -1,6 +1,6 @@
-# Lugo - a fork of Luke's theme
+# Oliver's Hugo Theme
 
-A basic hugo theme based off of [Luke Smith's](https://lukesmith.xyz) hugo theme. Quite a lot has been changed so it is barely a fork at this point.
+Fork of [lugo](https://github.com/LukeSmithxyz/lugo). Used for my personal website(s).
 
 ## Get started
 

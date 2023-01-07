@@ -5,7 +5,16 @@
 <body>
 {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
 <main>
-<header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+<header>
+	<h1 id="tag_{{ .Title }}">
+		{{ if .IsHome }} {{ .Site.Title }} {{ end }}
+		{{ block "title" . }}
+	{{ end }}</h1>
+	<h4 id="tag_{{ .Title }}">
+		{{ if not .IsHome }} {{ .Params.description }} {{ end }}
+	</h4>
+
+</header>
 <article>
 {{ block "main" . }}
 {{ .Content }}

@@ -16,9 +16,27 @@ main {
 	max-width: 75%;
 	margin: auto;
 }
-header h1 {
+h1 {
 	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
+h4 {
+	text-align: center;
+}
+header h1 {
 	color: white;
+}
+header h4 {
+	/*
+	The color half-way between the 
+	background color and pure white
+	*/
+	color: rgb(163, 163, 163);
 }
 a:link {
 	color: white;
@@ -41,6 +59,9 @@ article {
 hr {
 	border-top: 2px solid cadetblue;
 	border-radius: 4px;
+}
+br {
+	clear: both;
 }
 pre {
 	/*
@@ -69,14 +90,21 @@ code {
 	border-radius: 4px;
 }
 img {
+	border-radius: 4px;
+}
+article img {
 	max-width: 100%;
+	max-height: 100%;
+	outline: cadetblue solid 3px;
+}
+figure {
+	margin: 2%;
 }
 footer {
 	padding-top: 2%;
 	text-align: center;
 	clear: both;
 }
-
 footer a:any-link {
 	color: white;
 }
@@ -111,4 +139,23 @@ main {
 	text-align: center;
 	clear: both;
 	color: rgb(64, 64, 64);
+}
+
+/* For putting right / left boxes next to each other */
+.left {
+	width: 45%;
+	padding-right: 5%;
+	float: left;
+	clear: both;
+}
+
+.right {
+	width: 45%;
+	padding-left: 5%;
+	float: right;
+}
+
+.subtext {
+	color: rgb(69, 69, 69);
+	font-style: italic;
 }
