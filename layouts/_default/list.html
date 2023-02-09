@@ -3,6 +3,7 @@
 {{- end }}
 {{ define "main" -}}
 {{ .Content }}
+{{ if not .IsHome }}
 <ul>
 {{- range.Pages }}
 <li>
@@ -18,3 +19,4 @@
 {{- end }}
 </ul>
 {{- end }}
+{{ end }}

@@ -2,6 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 description: "Example"
-tags: ['']
+tags: ['blog']
 draft: true
 ---
