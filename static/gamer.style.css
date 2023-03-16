@@ -1,16 +1,8 @@
-.copy:hover {
-    color: #344a70;
-}
-
-::-webkit-scrollbar {
-	width: 0;
-}
-
 body {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: large;
-	background: rgb(71, 71, 71);
-	color: black;
+	background: rgb(40, 40, 40);
+	color: white;
 }
 
 main {
@@ -55,23 +47,16 @@ a:visited{
 }
 
 article a:link {
-	color: rgb(0, 0, 0);
+	color: white;
 }
 
 article a:visited {
-	color: rgb(64, 64, 64);
+	color: rgb(211, 211, 211);
 }
-
-article {
-	background-color: burlywood;
-	outline: cadetblue solid 5px;
-	padding: 3%;
-	border-radius: 10px;
-}
-
 hr {
-	border-top: 2px solid cadetblue;
+	border-top: 2px solid black;
 	border-radius: 4px;
+	animation: rgb-pulse 4s infinite alternate;
 }
 
 br {
@@ -89,7 +74,8 @@ pre {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 8px;
-	outline: cadetblue solid 3px;
+	animation: rgb-pulse 4s infinite alternate;
+	outline: solid 3px;
 }
 
 code {
@@ -106,14 +92,20 @@ code {
 	border-radius: 4px;
 }
 
-img {
-	border-radius: 4px;
+article {
+	background-color: black;
+	animation: rgb-pulse 4s infinite alternate;
+	outline: solid 5px;
+	padding: 3%;
+	border-radius: 10px;
 }
 
-article img {
+img {
+	border-radius: 4px;
 	max-width: 100%;
 	max-height: 100%;
-	outline: cadetblue solid 3px;
+	animation: rgb-pulse 4s infinite alternate;
+	outline: solid 3px;
 }
 
 figure {
@@ -176,6 +168,15 @@ footer a:any-link {
 }
 
 .subtext {
-	color: rgb(69, 69, 69);
+	color: rgb(151, 151, 151);
 	font-style: italic;
 }
+
+@keyframes rgb-pulse {
+	0% {outline: solid rgb(245, 78, 78);} 
+	20% {outline: solid rgb(105, 254, 105);} 
+	40% {outline: solid rgb(255, 255, 42);} 
+	60% {outline: solid rgb(111, 248, 255);} 
+	80% {outline: solid rgb(255, 70, 255);}
+	100% {outline: solid rgb(245, 78, 78);} 
+ }
