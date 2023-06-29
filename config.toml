@@ -15,3 +15,6 @@ languageCode = 'en-us'
   nextprev = true
   taglist = true
   showrss = true
+
+  #xslt stylesheet for rss feed
+  rssStylesheet = ""
