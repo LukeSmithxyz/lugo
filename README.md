@@ -9,7 +9,7 @@ hugo new site new-site
 cd new-site
 git clone https://github.com/lukesmithxyz/lugo themes/lugo
 echo "theme = 'lugo'" >> config.toml
-cp themes/lugo/static/style.css static/
+touch static/custom.css  # put your style changes into that file
 ```
 
 ## stuff
