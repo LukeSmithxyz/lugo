@@ -18,20 +18,9 @@ main {
 	margin: auto;
 }
 
-h1 {
+h1, h2, h3, h4 {
 	text-align: center;
-}
-
-h2 {
-	text-align: center;
-}
-
-h3 {
-	text-align: center;
-}
-
-h4 {
-	text-align: center;
+	flex: 100%;
 }
 
 header h1 {
@@ -108,12 +97,13 @@ code {
 
 img {
 	border-radius: 4px;
+	margin: 0;
 }
 
-article img {
-	max-width: 100%;
-	max-height: 100%;
-	outline: cadetblue solid 3px;
+figcaption {
+	color: rgb(69, 69, 69);
+	font-style: italic;
+	text-align: center;
 }
 
 figure {
@@ -130,52 +120,9 @@ footer a:any-link {
 	color: white;
 }
 
-/* For NEXTPREV.HTML */
-#nextprev {
-	/* The container for both the previous and next articles. */
-	color: black;
+@media only screen and (max-width: 600px) {
+	main {
+		max-width: 90%;
+	}
 }
 
-#nextprev a:any-link {
-	color: black;
-}
-
-#nextart {
-	float: left ;
-	text-align: left ;
-}
-
-#prevart {
-	float: right ;
-	text-align: right ;
-}
-
-#nextart,#prevart {
-	max-width: 33% ;
-}
-
-/* For TAGLIST.HTML */
-.taglist {
-	text-align: center;
-	clear: both;
-	color: rgb(64, 64, 64);
-}
-
-/* For putting right / left boxes next to each other */
-.left {
-	width: 45%;
-	padding-right: 5%;
-	float: left;
-	clear: both;
-}
-
-.right {
-	width: 45%;
-	padding-left: 5%;
-	float: right;
-}
-
-.subtext {
-	color: rgb(69, 69, 69);
-	font-style: italic;
-}

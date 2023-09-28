@@ -1,0 +1,46 @@
+
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+	color: black;
+}
+
+#nextprev a:any-link {
+	color: black;
+}
+
+#nextart {
+	float: left ;
+	text-align: left ;
+}
+
+#prevart {
+	float: right ;
+	text-align: right ;
+}
+
+#nextart,#prevart {
+	max-width: 33% ;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center;
+	clear: both;
+	color: rgb(64, 64, 64);
+}
+
+/* For putting right / left boxes next to each other */
+.left {
+	width: 45%;
+	padding-right: 5%;
+	float: left;
+	clear: both;
+}
+
+.right {
+	width: 45%;
+	padding-left: 5%;
+	float: right;
+}
+
