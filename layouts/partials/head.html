@@ -1,0 +1,19 @@
+<head>
+<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+<link rel="canonical" href="{{ .Site.BaseURL }}">
+<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+<link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+{{ with .Site.Params.favicon }}
+<link rel="icon" href="{{ . }}">
+{{ end -}}
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+{{ if isset .Params "tags" }}
+<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . " , " }}{{ end }}">
+{{ end -}}
+{{ if isset .Params "redirect" }}
+<meta http-equiv="refresh" content="2; URL={{ with .Params.redirect }}{{ . }}{{ end }}">
+{{ end -}}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta charset="utf-8">
+</head>

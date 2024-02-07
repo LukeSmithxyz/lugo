@@ -7,7 +7,7 @@
 -->
 <figure {{ with .Get "class" }}class="{{.}}"{{ end -}}>
 	{{- with .Get "link"}}<a href="{{.}}">{{ end -}}
-	<img src="{{ .Get "src" }}"
+	<img src='{{ .Get "src" }}'
 	     {{- with .Get "mouse" }} title="{{.}}"{{ end -}}
 	     {{- with .Get "alt" }} alt="{{.}}"{{ end -}}
 	>

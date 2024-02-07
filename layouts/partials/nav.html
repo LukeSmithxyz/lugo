@@ -1,8 +1,0 @@
-<nav>
-    <ul>
-	{{- $sec := .Page.Section }}{{ $file := .File.TranslationBaseName -}}
-        {{ range.Site.Menus.main.ByWeight }}{{ $base := path.Base .URL }}
-	<li><a {{ if or ( eq $sec $base ) ( eq $file $base ) ( and (eq $sec "") ( eq $file "_index") (eq $base "/") ) }}class="menuactive" {{ end }}href="{{ .URL }}"><span class=pre>{{ .Pre }}</span><span class=menuname>{{ .Name }}</span></a></li>
-        {{- end }}
-    </ul>
-</nav>

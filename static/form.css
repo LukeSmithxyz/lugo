@@ -1,0 +1,61 @@
+input {
+    color: #ffffff;
+    margin: 0.2rem;
+}
+
+textarea:focus, input:focus {
+    outline-width: 0.2rem;
+    outline-style: solid;
+}
+
+textarea:focus {
+    outline-color: #222222;
+}
+
+input:focus {
+    outline-color: white;
+}
+
+input[type="submit"]:focus {
+    outline-color: #344a70;
+}
+
+input[type="submit"] {
+    background-color: #344a70;
+    text-align: center;
+}
+
+input[type="password"], [type="text"] {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* input[value="Post"] {
+} */
+
+textarea, input {
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding: 0.75rem;
+}
+
+textarea {
+    background-color: #222222;
+    border-style: solid;
+    border-width: 0;
+    resize: none;
+    color: white;
+    scrollbar-width: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+textarea > ::placeholder {
+    color: #717171;
+    opacity: 1;
+}

@@ -1,45 +1,99 @@
+::-webkit-scrollbar {
+	width: 0;
+}
+
 body {
-	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+    background-color: #222222;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: large;
 }
 
-main {
-	max-width: 800px ;
-	margin: auto ;
+header {
+    background-color: #344a70;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: xx-large;
 }
 
-img {
-	max-width: 100% ;
+.article-header {
+    background-color: #454545;
+    margin: 2rem;
+    margin-bottom: 0;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
-header h1 {
-	text-align: center ;
+.spaced {
+    margin: 0;
+    padding: 1rem;
+}
+
+article {
+    background-color: #303030;
+    padding: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5em;
+}
+
+hr {
+    margin: 2rem;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #454545;
+    height: 1px;
 }
 
 footer {
-	text-align: center ;
-	clear: both ;
+    color: #606060;
+    text-align: center;
 }
 
-/* For TAGLIST.HTML */
-.taglist {
-	text-align: center ;
-	clear: both ;
+p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
 }
 
-/* For NEXTPREV.HTML */
-#nextprev {
-	/* The container for both the previous and next articles. */
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    text-align: center;
 }
-#prevart {
-	float: left ;
-	text-align: left ;
+
+a {
+    color: #3e765d;
 }
-#nextart {
-	float: right ;
-	text-align: right ;
+
+a:hover {
+    color: #344a70;
+    text-decoration-line: none;
 }
-#nextart,#prevart {
-	max-width: 33% ;
+
+header a {
+    color: inherit;
+    text-decoration-line: none;
+    font-weight: normal;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: inherit
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+main {
+    max-width: 100%;
+    margin: auto;
+}
 }

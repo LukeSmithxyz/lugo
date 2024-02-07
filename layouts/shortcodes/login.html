@@ -1,0 +1,14 @@
+<div>
+{% if user %}
+    Welcome {{/* user */}}!
+{% else %}
+<link rel='stylesheet' type='text/css' media='screen' href='/form.css'>
+<form class="spaced" method="post" action="login" enctype="application/x-www-form-urlencoded">
+    <label>Login</label>
+    <br>
+    <input type="text" id="username" name="username" aria-autocomplete="both" placeholder="Username" autofocus autocomplete="username" required><br>
+    <input type="password" id="password" name="password" placeholder="Password" autocomplete="new-password" required><br>
+    <input type="submit" value="Submit">
+</form>
+{% endif %}
+</div>
