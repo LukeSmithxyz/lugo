@@ -1,0 +1,7 @@
+<link rel='stylesheet' type='text/css' media='screen' href='/roller.css'>
+<div class="roller-container">
+{{ $s := $.Params }}
+{{ range $k, $v := $s }}
+    <h3 class="roller{{ $k }}">{{ $v }}</h3>
+{{ end }}
+</div>
