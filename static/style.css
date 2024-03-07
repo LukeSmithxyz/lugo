@@ -1,3 +1,7 @@
+.copy:hover {
+    color: #344a70;
+}
+
 ::-webkit-scrollbar {
 	width: 0;
 }
@@ -7,7 +11,7 @@ body {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: large;
+    font-size: x-large;
 }
 
 header {
@@ -21,6 +25,7 @@ header {
 
 .article-header {
     background-color: #454545;
+    color: #707070;
     margin: 2rem;
     margin-bottom: 0;
     border-top-right-radius: 0.5rem;
@@ -66,6 +71,10 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
+article h1 {
+    margin-bottom: 1rem;
+}
+
 a {
     color: #3e765d;
 }
@@ -78,7 +87,7 @@ a:hover {
 header a {
     color: inherit;
     text-decoration-line: none;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 header a:hover {
