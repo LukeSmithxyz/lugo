@@ -1,8 +1,8 @@
 <head>
 <title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 <link rel="canonical" href="{{ .Site.BaseURL }}">
-<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
-<link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='{{ .Site.BaseURL }}/index.xml'>
+<link rel='stylesheet' type='text/css' media='screen' href='{{ .Site.BaseURL }}/style.css'>
 {{ with .Site.Params.favicon }}
 <link rel="icon" href="{{ . }}">
 {{ end -}}
