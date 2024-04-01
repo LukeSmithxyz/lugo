@@ -1,0 +1,71 @@
+.roller-container {display: grid; text-align: center;}
+.roller0,.roller1,.roller2,.roller3,.roller4,.roller5{
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-duration: 6s;
+    animation-direction: normal;
+    transform-origin: center;
+    /* works with "display: grid" to have all the words in the same place on the screen. */
+    grid-row: 1;
+    grid-column: 1;
+}
+.roller0 { animation-name: roll0; color: rgb(0, 182, 182)}
+.roller1 { animation-name: roll1; color: rgb(173, 3, 154)}
+.roller2 { animation-name: roll2; color: rgb(6, 179, 0)}
+.roller3 { animation-name: roll3; color: rgb(211, 189, 0)}
+.roller4 { animation-name: roll4; color: rgb(171, 0, 0)}
+.roller5 { animation-name: roll5; color: rgb(255, 247, 0)}
+@keyframes roll0 {
+	100% { opacity: 1; transform: translateY(0) rotateX(0); }
+	0% { opacity: 1; transform: translateY(0) rotateX(0); }
+	17% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	34% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	51% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	68% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	85% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+}
+@keyframes roll1 {
+	100% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	0% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	17% { opacity: 1; transform: translateY(0) rotateX(0); }
+	34% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	51% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	68% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	85% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+}
+@keyframes roll2 {
+	100% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	0% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	17% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	34% { opacity: 1; transform: translateY(0) rotateX(0); }
+	51% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	68% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	85% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+}
+@keyframes roll3 {
+	100% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	0% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	17% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	34% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	51% { opacity: 1; transform: translateY(0) rotateX(0); }
+	68% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	85% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+}
+@keyframes roll4 {
+	100% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	0% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	17% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	34% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	51% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	68% { opacity: 1; transform: translateY(0) rotateX(0); }
+	85% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+}
+@keyframes roll5 {
+	100% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	0% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	17% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	34% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	51% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	68% { opacity: 0; transform: translateY(2rem) rotateX(15deg); }
+	85% { opacity: 1; transform: translateY(0) rotateX(0); }
+}
