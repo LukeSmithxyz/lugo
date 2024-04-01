@@ -7,122 +7,102 @@
 }
 
 body {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: large;
-	background: rgb(71, 71, 71);
-	color: black;
+    background-color: #222222;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: x-large;
 }
 
-main {
-	max-width: 75%;
-	margin: auto;
+header {
+    background-color: #344a70;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: xx-large;
 }
 
-h1, h2, h3, h4 {
-	text-align: center;
-	flex: 100%;
+.article-header {
+    background-color: #454545;
+    color: #707070;
+    margin: 2rem;
+    margin-bottom: 0;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
-header h1 {
-	color: white;
-}
-
-header h4 {
-	/*
-	The color half-way between the 
-	background color and pure white
-	*/
-	color: rgb(163, 163, 163);
-}
-
-a:link {
-	color: white;
-}
-
-a:visited{
-	color: rgb(174, 174, 174);
-}
-
-article a:link {
-	color: rgb(0, 0, 0);
-}
-
-article a:visited {
-	color: rgb(64, 64, 64);
+.spaced {
+    margin: 0;
+    padding: 1rem;
 }
 
 article {
-	background-color: burlywood;
-	outline: cadetblue solid 5px;
-	padding: 3%;
-	border-radius: 10px;
+    background-color: #303030;
+    padding: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5em;
 }
 
 hr {
-	border-top: 2px solid cadetblue;
-	border-radius: 4px;
-}
-
-br {
-	clear: both;
-}
-
-pre {
-	/*
-	This has to be flagged important because somewhere in hugo a style
-	is being directly applied to pre blocks. Ill have to find it later.
-	 */
-	background-color: rgb(59, 59, 59) !important;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 8px;
-	outline: cadetblue solid 3px;
-}
-
-code {
-	font-size: large;
-	color: white;
-	/*
-	we need to re-define these
-	for times when a single backtick is used
-	*/
-	background-color: rgb(59, 59, 59);
-	padding-left: 3px;
-	padding-right: 3px;
-	padding-top: 1px;
-	border-radius: 4px;
-}
-
-img {
-	border-radius: 4px;
-	margin: 0;
-}
-
-figcaption {
-	color: rgb(69, 69, 69);
-	font-style: italic;
-	text-align: center;
-}
-
-figure {
-	margin: 2%;
+    margin: 2rem;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #454545;
+    height: 1px;
 }
 
 footer {
-	padding-top: 2%;
-	text-align: center;
-	clear: both;
+    color: #606060;
+    text-align: center;
 }
 
-footer a:any-link {
-	color: white;
+p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
 }
 
-@media only screen and (max-width: 600px) {
-	main {
-		max-width: 90%;
-	}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    text-align: center;
 }
 
+article h1 {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #3e765d;
+}
+
+a:hover {
+    color: #344a70;
+    text-decoration-line: none;
+}
+
+header a {
+    color: inherit;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: inherit
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+main {
+    max-width: 100%;
+    margin: auto;
+}
+}
