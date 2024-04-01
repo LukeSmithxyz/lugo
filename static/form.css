@@ -30,9 +30,6 @@ input[type="password"], [type="text"] {
     color: #222222;
 }
 
-/* input[value="Post"] {
-} */
-
 textarea, input {
     border-radius: 0.5rem;
     border-style: hidden;
