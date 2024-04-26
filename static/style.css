@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif ;
-	background: #110000 ;
+	background: #1b1b1b ;
 	color: #ccc ;
 }
 
@@ -42,4 +42,8 @@ footer {
 }
 #nextart,#prevart {
 	max-width: 33% ;
+}
+a {
+	color: #33bbff ;
+	text-decoration: none ;
 }
