@@ -10,6 +10,7 @@
 	<img src="{{ .Get "src" }}"
 	     {{- with .Get "mouse" }} title="{{.}}"{{ end -}}
 	     {{- with .Get "alt" }} alt="{{.}}"{{ end -}}
+	     loading="lazy"
 	>
 	{{- if .Get "link"}}</a>{{ end -}}
 	{{- with .Get "caption" -}}
