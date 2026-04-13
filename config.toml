@@ -1,6 +1,7 @@
 title = "Website Name"
 baseURL = 'https://example.org'
 languageCode = 'en-us'
+enableRobotsTXT = true
 
 [params]
   # "relatedtext" is the text that appears above the tag list at the bottom of pages.
